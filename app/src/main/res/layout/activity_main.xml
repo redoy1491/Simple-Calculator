@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FF7043"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Easy Calculator"
+        android:textColor="#8EE4DC"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="395dp"
+        android:layout_height="168dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="162dp"
+        android:background="#EB6E65"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="291dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/calculator_bg"
+        android:columnCount="4"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:rowCount="6">
+
+        <!-- Number and operator buttons -->
+        <Button
+            android:onClick="onNumberClick"
+            android:text="7"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="8"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="9"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onOperatorClick"
+            android:text="+"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="4"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="5"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="6"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onOperatorClick"
+            android:text="-"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="2"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="3"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onOperatorClick"
+            android:text="*"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="0"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onDotClick"
+            android:text="."
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onOperatorClick"
+            android:text="/"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onEqualClick"
+            android:text="="
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="onDeleteClick"
+            android:text="DEL"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:onClick="onClearClick"
+            android:text="CLR"
+            android:textStyle="bold" />
+
+    </GridLayout>
+</RelativeLayout>
